@@ -84,7 +84,7 @@ Prueba/
 1. **Clone the repository**:
 
 ```bash
-git clone https://github.com/jcomte23/biblioteca-easy.git
+git clone https://github.com/jaiderr1582/prueba.git
 cd biblioteca
 ```
 
