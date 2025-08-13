@@ -1,0 +1,130 @@
+{
+	"info": {
+		"_postman_id": "862bd406-7e6a-4b74-b9de-87d8b7a4eeac",
+		"name": "Prueba",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "46564291"
+	},
+	"item": [
+		{
+			"name": "get all",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/customers",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"customers"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get by id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/customers/5",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"customers",
+						"5"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "create",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"id_usuario\": 101,\n    \"name_customer\": \"Paulo andres\",\n    \"identification_number\": \"0000000\",\n    \"address\": \"avenida\",\n    \"phone\": \"091233\",\n    \"email\": \"pepe@gmail.com\",\n    \"state\": \"completada\",\n    \"state_2\": \"Nequi\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/customers",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"customers"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"id_usuario\": 3,\n    \"name_customer\": \"Rogelis\",\n    \"identification_number\": \"1235\",\n    \"address\": \"calle\",\n    \"phone\": \"123456789\",\n    \"email\": \"rogelis@gmail.com\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/customers/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"customers",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"id_usuario\": 3,\n    \"name_customer\": \"Rogelis\",\n    \"identification_number\": \"1235\",\n    \"address\": \"calle\",\n    \"phone\": \"123456789\",\n    \"email\": \"rogelis@gmail.com\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:3000/customers/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"customers",
+						"1"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

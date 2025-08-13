@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./app/css/styles.css">
+    <title>Prueba</title>
+</head>
+
+<body>
+
+    <h1>Financial Information</h1>
+
+    <form id="form">
+        <input type="hidden" id="id_customer">
+
+        <div>
+            <div>
+                <input type="number" id="id_customer" placeholder="ID customer" required>
+            </div>
+            <div>
+                <input type="number" id="username" placeholder="Username" required>
+            </div>
+            <div>
+                <input type="text" id="identification" placeholder="Identification" required>
+            </div>
+            <div>
+                <input type="number" id="address" placeholder="Address" required>
+            </div>
+            <div>
+                <input type="number" id="phone" placeholder="Phone" required>
+            </div>
+            <div>
+                <input type="number" id="email" placeholder="Email" required>
+            </div>
+            <div>
+                <select id="state" required>
+                    <option value="nequi">Nequi</option>
+                    <option value="daviplata">Daviplata</option>
+                </select>
+            </div>
+            <div>
+                <select id="state_2" required>
+                    <option value="pendiente">Pendiente</option>
+                    <option value="completada">Completada</option>
+                    <option value="fallida">Fallida</option>
+                </select>
+            </div>
+            <div>
+                <button type="submit">Guardar</button>
+            </div>
+        </div>
+    </form>
+
+    <table>
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Username</th>
+                <th>identification</th>
+                <th>address</th>
+                <th>phone</th>
+                <th>email</th>
+                <th>platform_used</th>
+            </tr>
+        </thead>
+        <tbody id="table">
+
+        </tbody>
+    </table>
+
+    <script src="./app/js/main.js"></script>
+</body>
+
+</html>
